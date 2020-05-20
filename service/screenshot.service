@@ -1,0 +1,12 @@
+
+[Unit]
+Description=file.coffee, for linux.
+
+[Service]
+Type=simple
+User=[LOCAL_USERNAME]]
+ExecStart=/usr/bin/python3 [FOLDER_LOCATION]/takeScreenShot.py /home/lukas/PycharmProjects/takeScreenshotLinux/ 
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
